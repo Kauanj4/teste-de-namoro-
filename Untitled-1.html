@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teste de Dia dos Namorados 💘</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      background: linear-gradient(135deg, #8a9ba8, #c3c9cc, #a4b9b8, #f2f0ec);
+      color: #2e3a59;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    h1 {
+      text-align: center;
+      color: #1f2a44;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #3a446e;
+    }
+    .question {
+      margin-top: 12px;
+    }
+    select, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: 1px solid #a3aed0;
+      background-color: #f7f9fc;
+      color: #2e3a59;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    select:focus, input[type="text"]:focus {
+      outline: none;
+      border-color: #5061a8;
+      background-color: #e6ebf8;
+    }
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #5061a8, #3a446e);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 3px 6px rgba(48, 60, 126, 0.3);
+      transition: background 0.4s ease;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #3a446e, #5061a8);
+      box-shadow: 0 5px 12px rgba(48, 60, 126, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>💘 Descubra o seu Dia dos Namorados Perfeito 💘</h1>
+  <form id="loveForm">
+    <label>Seu nome:</label>
+    <input type="text" id="nome" required />
+
+    <div class="question">
+      <label>1. Se eu te levasse um mimo surpresa, qual você acharia mais fofo?</label>
+      <select id="q1">
+        <option>Um buquê com um bilhete romântico</option>
+        <option>Chocolate ou docinho preferido</option>
+        <option>Uma pelúcia com nosso nome</option>
+        <option>Uma caixa com coisas que você ama</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>2. No nosso jantar especial, o que combinaria mais com o clima?</label>
+      <select id="q2">
+        <option>Sushi e um vinhozinho</option>
+        <option>Pizza na cama com filme</option>
+        <option>Churrasquinho e risadas</option>
+        <option>Algo leve feito com carinho</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>3. Se tivesse um passeio surpresa, você adoraria...</label>
+      <select id="q3">
+        <option>Um restaurante charmoso</option>
+        <option>Um lugar com natureza</option>
+        <option>Um rolê diferente e divertido</option>
+        <option>Ficar juntinhos em casa mesmo</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>4. Qual dessas surpresas te deixaria com um sorrisão?</label>
+      <select id="q4">
+        <option>Uma carta escrita à mão</option>
+        <option>Um presente pequeno, mas pensado com carinho</option>
+        <option>Um vídeo fofo com momentos nossos</option>
+        <option>Um dia só com coisas que você ama</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>5. Se eu aparecesse com uma sobremesa, qual você queria que fosse?</label>
+      <select id="q5">
+        <option>Torta de chocolate</option>
+        <option>Cheesecake</option>
+        <option>Sorvete com cobertura</option>
+        <option>Frutinhas com leite condensado</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>6. Para um momento a dois, o que não pode faltar?</label>
+      <select id="q6">
+        <option>Músicas que a gente ama</option>
+        <option>Luz de velas</option>
+        <option>Muitas risadas</option>
+        <option>Uma coberta e um filminho</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>7. Se tivesse uma playlist só nossa, ela seria mais...</label>
+      <select id="q7">
+        <option>Romântica e lenta</option>
+        <option>Pop chiclete</option>
+        <option>Sertaneja/sofrência</option>
+        <option>Cheia de músicas antigas</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>8. Um presente simples que te faria feliz sem nem gastar muito:</label>
+      <select id="q8">
+        <option>Uma caneca personalizada</option>
+        <option>Um porta-retrato com foto nossa</option>
+        <option>Uma cartinha escrita com carinho</option>
+        <option>Um mimo feito à mão</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>9. Se você ganhasse uma “experiência” de presente, preferiria:</label>
+      <select id="q9">
+        <option>Spa ou massagem relaxante</option>
+        <option>Piquenique ao ar livre</option>
+        <option>Noite com jogos e risadas</option>
+        <option>Dia de cinema em casa com tudo incluso</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label>10. E pra fechar o Dia dos Namorados, o que deixaria tudo perfeito?</label>
+      <select id="q10">
+        <option>Um beijo na chuva (bem filme mesmo)</option>
+        <option>Dormir de conchinha</option>
+        <option>Uma surpresa no fim do dia</option>
+        <option>Só estar junto já basta 💗</option>
+      </select>
+    </div>
+
+    <button type="submit">Enviar para o WhatsApp 💬</button>
+  </form>
+
+  <script>
+    document.getElementById('loveForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const respostas = [];
+      for (let i = 1; i <= 10; i++) {
+        respostas.push(document.getElementById(`q${i}`).value);
+      }
+
+      const mensagem = `💘 *Teste de Dia dos Namorados* 💘\nNome: ${nome}\n\n1. ${respostas[0]}\n2. ${respostas[1]}\n3. ${respostas[2]}\n4. ${respostas[3]}\n5. ${respostas[4]}\n6. ${respostas[5]}\n7. ${respostas[6]}\n8. ${respostas[7]}\n9. ${respostas[8]}\n10. ${respostas[9]}`;
+
+      const numero = '5519992729339';
+      const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, '_blank');
+    });
+  </script>
+</body>
+</html>
